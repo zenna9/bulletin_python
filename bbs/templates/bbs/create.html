@@ -1,0 +1,20 @@
+<!--create-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>create</title>
+</head>
+
+<body>
+<h1>새글 쓰기입니다</h1>
+<form action="/bbs/create_process/" method="post">
+    {% csrf_token %}
+    글제목 : <input type="text" name="b_title"><br><br>
+    작성자 : <input type="text" name="b_author"><br><br>
+    글내용 : <input type="text" name="b_content"><br><br>
+
+    <input type="submit" value="글 등록하기">
+</form>
+</body>
+</html>
